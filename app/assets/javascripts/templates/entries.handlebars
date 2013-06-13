@@ -1,4 +1,4 @@
-{{view Ember.TextField valueBinding="newEntryName" action="addEntry"}}
+{{view EmberRaffler.NewEntryView}}
 <ul>
   {{#each controller}}
     <li>
@@ -9,4 +9,4 @@
     </li>
   {{/each}}
 </ul>
-<button {{action drawWinner}}>Draw Winner</button>
+<button {{action drawWinner}} {{bindAttr disable="allWinners"}}>Draw Winner</button>

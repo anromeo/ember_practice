@@ -1,5 +1,5 @@
 EmberRaffler.Router.map (match)->
   @route 'entries', path: '/'
 
-Raffler.EntriesRoute = Ember.Route.Extend
-  setupController: (controller) -> controller.set('content', [])
+EmberRaffler.EntriesRoute = Ember.Route.extend
+  model: -> EmberRaffler.Entry.find()
